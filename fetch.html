@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <article></article>
+        <input type="button" value="fech" onclick="
+        fetch('html.html').then(function(reponse){
+            response.text().then(function(text){
+                //alert(text);
+
+                document.querySelector('article').innerHTML(text);
+            })
+        })
+        "/>
+
+    </body>
+</html>
